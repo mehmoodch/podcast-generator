@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git
 
-RUN pip3 install --upgrade pip
+# Upgrade pip to a specific version
+RUN pip3 install --upgrade pip==21.1.3
 
 # Install pyYAML with specific version if needed
 RUN pip3 install pyYAML
