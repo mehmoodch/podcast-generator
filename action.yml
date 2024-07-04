@@ -1,0 +1,18 @@
+name: "podcast generator"
+author: "Mehmood Asghar"
+description: "generate a feed for yaml file."
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "red"
+inputs:
+  email:
+    description: the commiter email address
+    required: true
+    default: ${{github.actor}}@localhost
+  name:
+    description: the commiters name
+    required:true
+    default: ${{github.actor}}
