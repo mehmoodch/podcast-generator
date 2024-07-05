@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 # Update package lists and install necessary packages
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y apt-transport-https\
         python3.10 \
         python3-distutils \
         python3-dev \
